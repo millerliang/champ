@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="css/for_globe.css" rel="stylesheet">
+	<style>
+	.band-container {width:90%;}
+	.band form h1 {color:#333;margin-left:12rem;}
+	.band form h1 p {color:#337ab7;margin:.5rem 0;font-size:2rem;}
+	.band form b {color:red;margin-right:.2rem;}
+	.band-grey {
+		background-image: url('images/login.png');
+		background-repeat: no-repeat;
+		background-size:22% auto;
+		background-position:right 2rem;
+	}
+	@media screen and (max-width: 980px) {
+		.band-container {width: 100%;}
+		.band form h1 {text-align_:center;margin:0 auto;}
+		.band-grey {background-position:right 2rem;background-size:28% auto;}
+	}
+	</style>
+</head>
+<body>
+
+<div class="l-site">
+	<aside class="l-nav">
+		<nav class="nav">
+			<div class="menu clearfix" style="width: 16rem;height: 2.5rem;text-align: right;color:#fff;top: 1.5rem;line-height:2;">
+				<i class="fa fa-angle-left fa-2x"></i>
+			</div>
+			<ul id="Nav_link">
+				<li class="nav-primary">
+					<a href="index.html"><i class="fa fa-home"></i> Home</a>
+				</li>
+			</ul>
+			<section id="log_inOut"></section>
+		</nav>
+	</aside>
+
+	<div class="l-page">
+		<div class="menu">
+			<div class="menu-hamburger"></div>
+		</div>
+		<section class="band band-grey">
+			<div class="band-container">
+				<div class="band-inner">
+					<form class="form-horizontal" role="form">
+						<h1>學員登入<p>學校資料</p></h1>
+						<div class="form-group">
+							<label class="col-sm-2 control-label"><b>*</b>城市</label>
+							<div class="col-sm-10">
+								<select class="form-control">
+									<option>台北市</option>
+									<option>新北市</option>
+									<option>基隆市</option>
+									<option>桃園市</option>
+									<option>新竹市</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label"><b>*</b>行政區</label>
+							<div class="col-sm-10">
+								<select class="form-control">
+									<option>中正區</option>
+									<option>中山區</option>
+									<option>大安區</option>
+									<option>大同區</option>
+									<option>南港區</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label"><b>*</b>學校</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="" placeholder="請填寫學校">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label"><b>*</b>學號</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="" placeholder="請填寫學號">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label"><b>*</b>生日</label>
+							<div class="col-sm-10">
+								<input type="date" class="form-control" id="" placeholder="---">
+							</div>
+						</div>
+						<h1 class="col-sm-offset-2">家長登入</h1>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">手機號碼</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="" placeholder="請填寫手機號碼">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">學生姓名</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="" placeholder="請填寫學生姓名">
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="" class="col-sm-2 control-label">學生生日</label>
+							<div class="col-sm-10">
+								<input type="date" class="form-control" id="" placeholder="---">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<button type="submit" class="btn btn-lg btn-primary"><i class="fa fa-sign-in"></i> 登入</button>
+								<a href="registered.html" class="btn btn-lg btn-default"><i class="fa fa-registered"></i> 註冊</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	</div><!-- /.l-page -->
+</div><!-- /.l-site -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/for_globe.js"></script>
+<script>
+</script>
+
+</body>
+</html>

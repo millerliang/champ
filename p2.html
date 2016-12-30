@@ -2,21 +2,19 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>收支簿</title>
+	<title>收支簿 - 明細</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="css/for_globe.css" rel="stylesheet">
 	<style>
-	.band-container,.band-inner {width:100%;}
+	.band-container,.band-inner {width:100%;vertical-align: top;}
 	.table th,.table td {font-size:1.8rem;text-align:center;color:#fff;border-color:#fff!important;}
 	.list-group h2 {margin: 0;color:#6cd900;}
 	.list-group h2.red {margin: 0;color:#ff0000;}
-	.pager {color:#fff;}
-	.pager li {font-size:1.6rem;}
-	@media screen and (max-width: 980px) {
-		.pager li {font-size: small;}
-	}
+	
+	.box-block {padding:1.2rem 1.6rem;background-color:#fff;margin-bottom:2rem;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;}
+	.box-block p {color:#333;}
 	</style>
 </head>
 <body>
@@ -45,72 +43,35 @@
 				<div class="band-inner">
 					<ol class="breadcrumb">
 						<li><a href="index.html"><i class="fa fa-home"></i> 首頁</a></li>
-						<li class="active">收支簿</li>
+						<li><a href="p1.html">收支簿</a></li>
+						<li class="active">明細</li>
 					</ol>
-					<h1 class="threeD"><i class="fa fa-book"></i> 收支簿</h1>
-					<table class="table">
-						<tr>
-							<th>錢包</th>
-							<th>儲蓄</th>
-							<th>儲蓄達成率</th>
-							<th>到期日</th>
-						</tr>
-						<tr>
-							<td>+500</td>
-							<td>400</td>
-							<td>80%</td>
-							<td>2016/11/27</td>
-						</tr>
-					</table>
-					<nav>
-						<ul class="pager">
-							<li class="previous"><a href="#"><i class="fa fa-angle-left"></i> 上一週</a></li>
-							<li>2016/11/07 ~ 2016/11/13</li>
-							<li class="next"><a href="#">下一週 <i class="fa fa-angle-right"></i></a></li>
-						</ul>
-					</nav>
-					<table class="table">
-						<tr>
-							<th>週收入</th>
-							<th>週消費</th>
-							<th>週儲蓄</th>
-							<th>週捐款</th>
-							<th>週結餘</th>
-						</tr>
-						<tr>
-							<td>+500</td>
-							<td>-400</td>
-							<td>-50</td>
-							<td>-50</td>
-							<td>0</td>
-						</tr>
-					</table>
+					<h1 class="threeD">消費明細</h1>
 					<ul class="list-group">
-						<li class="list-group-item">
-							<div class="pull-right"><h2>+500</h2></div>
-							<time>2016/11/07 收入[前期儲蓄]</time>
-							<div>儲蓄期間 2016/10/31 ~ 2016/11/06</div>
-						</li>
 						<li class="list-group-item">
 							<div class="pull-right"><h2>+20</h2></div>
 							<time>2016/11/07 收入[前期結餘]</time>
 							<div>儲蓄 2016/10/31 ~ 2016/11/06</div>
 						</li>
 						<li class="list-group-item">
-							<div class="pull-right"><h2>+20</h2></div>
-							<time>2016/11/07 [零用金]</time>
-							<div>老媽給</div>
-						</li>
-						<li class="list-group-item">
-							<div class="pull-right"><h2 class="red">-20</h2></div>
-							<time>2016/11/07 [餐飲]</time>
-							<div>早餐</div>
+							<div class="pull-right"><h2>+500</h2></div>
+							<time>2016/11/07 收入[前期儲蓄]</time>
+							<div>儲蓄期間 2016/10/31 ~ 2016/11/06</div>
 						</li>
 					</ul>
+					<div class="box-block">
+						<p><i class="fa fa-usd"></i> [支出]</p>
+						<p>日期：2016/11/10 15:27</p>
+						<p>金額：20 ntd</p>
+						<p>付款：電子錢包</p>
+						<p>類型：餐飲</p>
+						<p>店家：實體</p>
+						<p>需求：需要</p>
+						<p>備註：早餐</p>
+					</div>
 					<ul class="tool_btns">
-						<li><a class="btn btn-lg btn-block btn-danger" href="#0"><i class="fa fa-minus-circle"></i> 新增支出</a></li>
-						<li><a class="btn btn-lg btn-block btn-primary" href="#0"><i class="fa fa-plus-circle"></i> 新增收入</a></li>
-						<li><a class="btn btn-lg btn-block btn-default" href="#0"><i class="fa fa-circle-o"></i> 零收支</a></li>
+						<li><a class="btn btn-lg btn-block btn-danger" href="#0"><i class="fa fa-trash-o"></i> 刪除</a></li>
+						<li><a class="btn btn-lg btn-block btn-default" href="#0"><i class="fa fa-pencil"></i> 編輯</a></li>
 					</ul>
 				</div>
 			</div>

@@ -39,8 +39,8 @@ jQuery(document).ready(function($){
 	});
 	
 	// btn login/logout
-	inOut_btns = "<a class='btn btn-primary' href='#0'><i class='fa fa-sign-in'></i> 登入 | 註冊</a>";
-	inOut_btns += "<a class='btn btn-danger' href='#0'><i class='fa fa-sign-out'></i> 登出</a>";
+	inOut_btns = "<a class='btn btn-primary' href='login.html'><i class='fa fa-sign-in'></i> 登入 | 註冊</a>";
+	inOut_btns += "<a class='btn btn-danger' href='logout.html'><i class='fa fa-sign-out'></i> 登出</a>";
 	$('#log_inOut').append(inOut_btns);
 
 });
