@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
 			},{
 			nav_text:"3S分析",nav_url:"p12.html"
 			},{
-			nav_text:"類別分析",nav_url:"#0"
+			nav_text:"類別分析",nav_url:"p13.html"
 			},{
 			nav_text:"個資設定",nav_url:"#0"
 			},{
