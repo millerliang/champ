@@ -11,13 +11,13 @@ jQuery(document).ready(function($){
 
 	// Left Aside Menu Links
 	var aside_text =[{
-			nav_text:"收支簿",nav_url:"#0"
+			nav_text:"收支簿",nav_url:"p1.html"
 			},{
-			nav_text:"儲蓄目標",nav_url:"#0"
+			nav_text:"儲蓄目標",nav_url:"p6.html"
 			},{
-			nav_text:"儲蓄分析",nav_url:"#0"
+			nav_text:"儲蓄分析",nav_url:"p10.html"
 			},{
-			nav_text:"3S分析",nav_url:"#0"
+			nav_text:"3S分析",nav_url:"p12.html"
 			},{
 			nav_text:"類別分析",nav_url:"#0"
 			},{
@@ -26,8 +26,6 @@ jQuery(document).ready(function($){
 			nav_text:"我的心得",nav_url:"#0"
 			},{
 			nav_text:"我的金幣",nav_url:"#0"
-			},{
-			nav_text:"我的心得",nav_url:"#0"
 			}
 		];
 	$.each(aside_text,function(index,obj)
