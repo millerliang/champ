@@ -49,7 +49,7 @@
 						<li class="active">分析類別</li>
 					</ol>
 					<!-- <h1 class="threeD">設定提醒</h1> -->
-					<p>設定分析期間(每期四周)</p>
+					<p>設定分析期間 (每期四周)</p>
 					<br>
 					<nav>
 						<ul class="pager">
@@ -58,7 +58,6 @@
 							<li class="next"><a href="#">下一週 <i class="fa fa-angle-right"></i></a></li>
 						</ul>
 					</nav>
-					<canvas id="myChart" width="100" height="100"></canvas>
 					<table class="table table_s1">
 						<tr>
 							<th>本期收入</th>
@@ -73,6 +72,16 @@
 							<td>+50</td>
 						</tr>
 					</table>
+					<div style="height:3rem;"></div>
+					<div class="row">
+						<div class="col-sm-6">
+							<canvas id="myChart1" width="100" height="100"></canvas>
+						</div>
+						<div class="col-sm-6">
+							<canvas id="myChart2" width="100" height="100"></canvas>
+						</div>
+					</div>
+					<br>
 					<div class="row">
 						<div class="col-sm-8">
 							<table class="table table_s2">
@@ -169,8 +178,9 @@
 <script src="js/for_globe.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script>
-var ctx = document.getElementById("myChart");
-var myChart = new Chart(ctx, {
+var ctx1 = document.getElementById("myChart1");
+var ctx2 = document.getElementById("myChart2");
+var myChart = new Chart(ctx1, {
     type: 'pie',
     data: {
         labels: ["紅", "藍", "黃", "綠", "紫", "橘"],
@@ -215,6 +225,42 @@ var myChart = new Chart(ctx, {
     //            }
     //        }]
     //    }
+    }
+});
+var myChart = new Chart(ctx2, {
+    type: 'pie',
+    data: {
+        labels: ["紅", "藍", "黃", "綠"],
+        datasets: [{
+            label: '# of Votes',
+            data: [18, 24, 5, 8],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.75)',
+                'rgba(54, 162, 235, 0.75)',
+                'rgba(255, 206, 86, 0.75)',
+                'rgba(75, 192, 192, 0.75)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+		title: {
+            display: true,
+            fontSize: 24,
+			fontStyle:'bold',
+            fontColor: '#fff',
+            text: '收入'
+        },
+		labels:{
+			fontColor: '#fff',
+			fontSize: 24
+		}
     }
 });
 </script>

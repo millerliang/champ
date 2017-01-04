@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>支出預算設定</title>
+	<title>我的金幣</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="css/for_globe.css" rel="stylesheet">
 	<style>
 	.band-container,.band-inner {width:100%;vertical-align: top;}
-	.table th {font-size:1.8rem;text-align:center;color:#fff;border:none!important;border-bottom:1px solid #fff!important;}
-	.table td {font-size:1.5rem;text-align:center;color:#fff;border-color:rgba(255,255,255,.12)!important;}
+	.band h1__,.band p,.breadcrumb a, .breadcrumb li.active, .breadcrumb>li+li:before {color:#333;}
+	.table th {font-size:1.8rem;text-align:center;color_:#fff;border:none!important;border-bottom:1px solid #fff!important;}
+	.table td {font-size:1.5rem;text-align:center;color_:#fff;border-color:rgba(255,255,255,.12)!important;}
+	.table th:first-child,.table td:first-child {text-align:left;}
 	</style>
 </head>
 <body>
@@ -34,88 +36,63 @@
 		<div class="menu">
 			<div class="menu-hamburger"></div>
 		</div>
-		<section class="band band-d">
+		<section class="band band-grey">
 			<div class="band-container">
 				<div class="band-inner">
 					<ol class="breadcrumb">
 						<li><a href="index.html"><i class="fa fa-home"></i> 首頁</a></li>
-						<li class="active">支出預算設定</li>
+						<li class="active">我的金幣</li>
 					</ol>
-					<h1 class="threeD">設定提醒</h1>
-					<p><b>*</b> 預算已一週為一期</p>
-					<p><b>*</b> 除首次設定外，只能設定下週生效的新預算</p>
+					<h1 class="threeD">我的金幣</h1>
+					<br>
 					<br>
 					<table class="table">
 						<tr>
-							<th>支出類別</th>
-							<th>當前預算</th>
-							<th>更新預算</th>
+							<th>獎勵日期</th>
+							<th>金幣</th>
+							<th>類型</th>
 						</tr>
 						<tr>
-							<td>餐飲</td>
-							<td>$100</td>
-							<td>$100</td>
+							<td>2016/12/06</td>
+							<td>+50</td>
+							<td>滿意度調查獎勵</td>
 						</tr>
 						<tr>
-							<td>服裝儀容</td>
-							<td>$100</td>
-							<td>$300</td>
+							<td>2016/12/06</td>
+							<td>+270</td>
+							<td>每周記錄獎勵</td>
 						</tr>
 						<tr>
-							<td>交通費</td>
-							<td>$100</td>
-							<td>$100</td>
+							<td>2016/12/06</td>
+							<td>+10</td>
+							<td>每日心得獎勵</td>
 						</tr>
 						<tr>
-							<td>電話網路</td>
-							<td>$100</td>
-							<td>$100</td>
+							<td>2016/12/06</td>
+							<td>+10</td>
+							<td>每日收支記錄獎勵</td>
 						</tr>
 						<tr>
-							<td>日常用品</td>
-							<td>$100</td>
-							<td>$500</td>
+							<td>2016/12/06</td>
+							<td>+10</td>
+							<td>每日心得獎勵</td>
 						</tr>
 						<tr>
-							<td>文具雜項</td>
-							<td>$100</td>
-							<td>$100</td>
+							<td>2016/12/06</td>
+							<td>+11</td>
+							<td>每日收支記錄獎勵</td>
 						</tr>
 						<tr>
-							<td>教育費</td>
-							<td>$100</td>
-							<td>$100</td>
+							<td>2016/12/06</td>
+							<td>+10</td>
+							<td>每日心得獎勵</td>
 						</tr>
 						<tr>
-							<td>休閒娛樂</td>
-							<td>$100</td>
-							<td>$100</td>
-						</tr>
-						<tr>
-							<td>其他支出</td>
-							<td>$100</td>
-							<td>$100</td>
-						</tr>
-						<tr>
-							<td>捐款</td>
-							<td>$100</td>
-							<td>$100</td>
-						</tr>
-						<tr>
-							<td>小計</td>
-							<td>$100</td>
-							<td>$1600</td>
-						</tr>
-						<tr>
-							<td>設定時間</td>
-							<td>2017/03/01 15:02</td>
-							<td>2017/03/05 09:31</td>
+							<td>2016/12/06</td>
+							<td>+100</td>
+							<td>註冊獎勵</td>
 						</tr>
 					</table>
-					<ul class="tool_btns">
-						<li><a class="btn btn-lg btn-block btn-default" href="#0" onclick="history.go(-1)">取消</a></li>
-						<li><a class="btn btn-lg btn-block btn-primary" href="#0" onclick="history.go(-1)">儲存設定</a></li>
-					</ul>
 				</div>
 			</div>
 		</section>

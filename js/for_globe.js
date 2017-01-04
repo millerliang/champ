@@ -21,17 +21,17 @@ jQuery(document).ready(function($){
 			},{
 			nav_text:"類別分析",nav_url:"p13.html"
 			},{
-			nav_text:"個資設定",nav_url:"#0"
+			nav_text:"個資設定",nav_url:"p14.html"
 			},{
-			nav_text:"我的心得",nav_url:"#0"
+			nav_text:"我的心得",nav_url:"p16.html"
 			},{
-			nav_text:"我的金幣",nav_url:"#0"
+			nav_text:"我的金幣",nav_url:"p15.html"
 			}
 		];
 	$.each(aside_text,function(index,obj)
 	{
 		aside_items = "<li class='nav-primary'>";
-		aside_items += "<a href='" + obj.nav_url + "'>" + obj.nav_text + "</a>";
+		aside_items += "<a href='" + obj.nav_url + "'><i class='fa fa-dot-circle-o'></i> " + obj.nav_text + "</a>";
 		aside_items += "</li>";
 		$('#Nav_link').append(aside_items);
 	});
