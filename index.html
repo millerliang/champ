@@ -9,12 +9,18 @@
 	<link href="css/for_globe.css" rel="stylesheet">
 	<style>
 	.table th,.table td {font-size:1.8rem;text-align:center;color:#fff;border-color:#fff!important;}
-	.tool_btns {position__:absolute;bottom__:2rem;margin:0;padding:0;list-style: none;display:table;width:100%;}
-	.tool_btns li {display__:inline-block;display: table-cell;text-align:center;padding:0 .5rem;}
-	.tool_btns li a {}
 	.news_item li {margin-bottom:.6rem;}
 	.news_item p {font-size:2rem;-moz-text-shadow: 0px 1px 1px rgba(0,0,0,.35);-webkit-text-shadow: 0px 1px 1px rgba(0,0,0,.35);text-shadow: 0px 1px 1px rgba(0,0,0,.35);}
 	.news_item small {color:rgba(0,0,0,.6);font-size: 1.4rem;}
+	.tool_btns {position:absolute;left:0;bottom:2rem;}
+	.band-f  polygon {stroke: #9e8b52!important;stroke-width: 9px!important;}
+	.band-f svg {margin-right:.8rem!important;}
+	.band-f svg:last-child {margin-right:0!important;}
+	@media screen and (max-width: 980px) {
+		.pager li {font-size: small;}
+		.tool_btns {position:fixed;z-index:3;padding-left:0;bottom:0;}
+		.band-f svg {margin-right:.25rem!important;}
+	}
 	</style>
 </head>
 <body>
@@ -41,7 +47,7 @@
 		<section class="band band-g">
 			<div class="band-container" style="width:100%;">
 				<div class="band-inner">
-					<img class="img-responsive" src="https://dummyimage.com/720x300/8d7c49/ffffff">
+					<img class="img-responsive" src="https://dummyimage.com/960x300/8d7c49/ffffff">
 					<br>
 					<table class="table">
 						<tr>
@@ -140,18 +146,17 @@
 <script src="js/jRate.min.js"></script>
 <script>
     jQuery(document).ready(function () {
-        //$(".rating-kv").rating();
 		$("#jRate1").jRate({
 			startColor: '#ffff00',
 			endColor: '#ffc34a',
-			width: 80,
-			height: 80
+			width: 64,
+			height: 64
 		});
 		$("#jRate2").jRate({
 			startColor: '#ffff00',
 			endColor: '#ffc34a',
-			width: 80,
-			height: 80
+			width: 64,
+			height: 64
 		});
     });
 </script>
