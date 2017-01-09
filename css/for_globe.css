@@ -5,6 +5,10 @@ ul,ol {list-style: none;margin:0;padding:0;}
 .btn-primary {background-color:#07acb2;border:1px solid #0aa7a7;}
 .btn-primary:hover {background-color:#2bedf8;border:1px solid #29cbfa;}
 .btn-danger {background-color:#bb0102;}
+/* for .band-f block btn color */
+.band-f .btn-primary {background-color:#00797d;}
+.btn-primary:hover {background-color:#006063;border:1px solid #00797d;}
+
 .l-site {margin: 0 auto;max-width: 1600px;position: relative;z-index: 1;}
 .l-site:before {
 content: "";
@@ -31,7 +35,7 @@ transition: 0.35s;
 
 .l-nav {
 position: absolute;
-width: 240px;
+width: 20rem;
 display: block;
 background: #3a4043;
 background: -moz-linear-gradient(0deg, rgba(58,64,67,1) 0%, rgba(58,64,67,1) 80%, rgba(55,60,60,1) 100%); /* ff3.6+ */
@@ -69,15 +73,14 @@ text-shadow: 0 2px 3px rgba(0, 0, 0, .25);
 left: 0;
 right: 0;
 margin: 0 auto;
-min-height__: 85vh;
-min-height: 100vh;
+height: 100vh;
 max-width: 960px;
 display: table;
 position: relative;
 padding: 0 3em;
 }
 
-.band-inner {position: relative;display: table-cell;vertical-align: middle;padding: 3em 0 4em;}
+.band-inner {position: relative;display: table-cell;vertical-align: top;padding: 3em 0 4em;}
 
 .band-a {background: #69D2E7;}
 .band-b {background: #F9D423;}
