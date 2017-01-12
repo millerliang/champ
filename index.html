@@ -9,9 +9,15 @@
 	<link href="css/for_globe.css" rel="stylesheet">
 	<style>
 	.table th,.table td {font-size:1.8rem;text-align:center;color:#fff;border-color:#fff!important;}
-	.news_item li {margin-bottom:.6rem;}
-	.news_item p {font-size:2rem;-moz-text-shadow: 0px 1px 1px rgba(0,0,0,.35);-webkit-text-shadow: 0px 1px 1px rgba(0,0,0,.35);text-shadow: 0px 1px 1px rgba(0,0,0,.35);}
-	.news_item small {color:rgba(0,0,0,.6);font-size: 1.4rem;}
+	.news_item li {margin-bottom:2rem;}
+	.news_item li p {
+		font-size:2rem;
+		color:#333;
+		__-moz-text-shadow: 0px 1px 1px rgba(0,0,0,.35);
+		__-webkit-text-shadow: 0px 1px 1px rgba(0,0,0,.35);
+		__text-shadow: 0px 1px 1px rgba(0,0,0,.35);
+	}
+	.news_item li small {color:rgba(0,0,0,.6);font-size: 1.4rem;}
 	.tool_btns {position:absolute;left:0;bottom:2rem;}
 	.band-f  polygon {stroke: #9e8b52!important;stroke-width: 9px!important;}
 	.band-f svg {margin-right:.8rem!important;}
@@ -47,7 +53,8 @@
 		<section class="band band-g">
 			<div class="band-container" style="width:100%;">
 				<div class="band-inner">
-					<img class="img-responsive" src="https://dummyimage.com/960x300/8d7c49/ffffff">
+					<!-- <img class="img-responsive" src="https://dummyimage.com/960x300/8d7c49/ffffff"> -->
+					<img class="img-responsive" src="images/money3.png">
 					<br>
 					<table class="table">
 						<tr>
@@ -68,13 +75,11 @@
 					<blockquote>
 						<p>最近收入 2016/11/20 $100 零用金</p>
 						<p>最近支出 2016/11/30 $50 餐飲</p>
-						<!-- <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer> -->
 					</blockquote>
 					<h1>近期儲蓄目標</h1>
 					<blockquote>
 						<p>2016/10/31 ～ 2016/11/27 要存 $500 已達成 80%</p>
 					</blockquote>
-					<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porta, tellus ut convallis luctus, lorem diam mattis arcu, eu consequat dui tortor eget lacus. Donec metus ligula, rutrum volutpat neque vel, porta tincidunt dui. Phasellus convallis tristique nunc. Integer nunc nunc, finibus a maximus at, viverra ut lorem. Etiam id velit risus. Vestibulum sapien mauris, fermentum nec luctus nec, fringilla non orci. Nullam blandit porta tincidunt. Donec placerat pretium dapibus. Ut interdum lorem eu nibh tincidunt vulputate. Aenean aliquam gravida quam, vel pulvinar odio. Pellentesque sed feugiat ligula. Quisque sagittis porttitor dui, ac lacinia mauris tempor vel. Donec rutrum lorem id nulla consequat vulputate.</p> -->
 					<br>
 					<ul class="tool_btns">
 						<li><a class="btn btn-lg btn-block btn-danger" href="p4.html"><i class="fa fa-minus-circle"></i> 新增支出</a></li>
@@ -85,58 +90,33 @@
 				</div>
 			</div>
 		</section>
-		<section class="band band-f" style="background-color:#f1ca83;">
+		<section class="band band-grey">
 			<div class="band-container">
 				<div class="band-inner">
 					<h1 class="threeD"><i class="fa fa-smile-o"></i> 滿意度評分</h1>
 					<h3>1.使用本 APP 滿意嗎？</h3>
 					<div id="jRate1"></div>
-					<!-- <p>
-						<i class="fa fa-star fa-3x"></i>
-						<i class="fa fa-star fa-3x"></i>
-						<i class="fa fa-star fa-3x"></i>
-						<i class="fa fa-star fa-3x"></i>
-						<i class="fa fa-star fa-3x"></i>
-					</p> -->
 					<h3>2.課程期間儲蓄滿意度？</h3>
 					<div id="jRate2"></div>
 					<div style="height:10rem;"></div>
-					<h1><i class="fa fa-newspaper-o"></i> 得勝者公告</h1>
+					<h1 style="color:#222;"><i class="fa fa-newspaper-o"></i> 得勝者公告</h1>
 					<ol class="news_item">
-						<li><p>xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx.</p><small><i class="fa fa-calendar"></i> 2016/12/29</small></li>
-						<li><p>xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx.</p><small><i class="fa fa-calendar"></i> 2016/12/28</small></li>
-						<li><p>xxxx xxxx xxxx xxxx xx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx.</p><small><i class="fa fa-calendar"></i> 2016/12/27</small></li>
-						<li><p>xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx.</p><small><i class="fa fa-calendar"></i> 2016/12/26</small></li>
+						<li>
+							<small><i class="fa fa-calendar"></i> 2016/12/29｜台北｜汪小編</small>
+							<p>親愛的臉書夥伴們感謝您一直以來支持【I'M A CHAMPION】粉絲團由於網路資訊與社會環境變化快速，我們希望能在有限的人力中，提供您最新最豐富的訊息內容誠摯邀請您加入「得勝者教育協會」粉絲團 <a href="https://www.facebook.com/champnpo/">www.facebook.com/champnpo/</a></p>
+						</li>
+						<li>
+							<small><i class="fa fa-calendar"></i> yyyy/mm/dd</small>
+							<p>【#你的讚值千萬~得勝者教育協會】啟動內心的得勝因子，給自己多一個選擇！如果，生命能夠有另一種選擇，你會怎麼做！鄭捷事件爆發後，在社會輿論引發猛烈的指責聲浪，得勝寶寶吳承學卻選擇在東海大學發起「用關愛守護每個角落心靈」遊行，讓充滿不安的校園重新凝聚。然而，這個熱愛生命的年輕人，也曾經隱藏著內心的叛逆，甚至會刁難得勝課程志工老師，究竟是什麼讓他有了不一樣的轉變呢？</p>
+						</li>
+						<li>
+							<small><i class="fa fa-calendar"></i> yyyy/mm/dd</small>
+							<p>得勝者教育協會22年來在國中小校園深耕青少年品格教育請大家幫忙到"<a href="https://www.facebook.com/spreadconscience/posts/1302360029792792" target="_blank">以下網頁</a>"為得勝者按讚並分享貼文，感謝！關乎我們爭取贊助的積分，一個讚1分，一次分享10分！請大家分享給大家!讓我們對青少年品格發揮更大影響力！</p>
+						</li>
 					</ol>
 				</div>
 			</div>
 		</section>
-		<!-- <section class="band band-c">
-			<div class="band-container">
-				<div class="band-inner">
-					<h1><i class="fa fa-newspaper-o"></i> 得勝者公告</h1>
-					<ol class="news_item">
-						<li><p>xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx.</p><small><i class="fa fa-calendar"></i> 2016/12/29</small></li>
-						<li><p>xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx.</p><small><i class="fa fa-calendar"></i> 2016/12/28</small></li>
-						<li><p>xxxx xxxx xxxx xxxx xx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx.</p><small><i class="fa fa-calendar"></i> 2016/12/27</small></li>
-						<li><p>xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx.</p><small><i class="fa fa-calendar"></i> 2016/12/26</small></li>
-					</ol>
-				</div>
-			</div>
-		</section>
-		<section class="band band-d">
-			<div class="band-container">
-				<div class="band-inner">
-					<h1>按鈕</h1>
-					<ul class="tool_btns">
-						<li><a class="btn btn-lg btn-block btn-danger" href="#0"><i class="fa fa-minus-circle"></i> 新增支出</a></li>
-						<li><a class="btn btn-lg btn-block btn-primary" href="#0"><i class="fa fa-plus-circle"></i> 新增收入</a></li>
-						<li><a class="btn btn-lg btn-block btn-default" href="#0"><i class="fa fa-pencil-square-o"></i> 新增心得</a></li>
-						<li><a class="btn btn-lg btn-block btn-default" href="#0"><i class="fa fa-circle-o"></i> 零收支</a></li>
-					</ul>
-				</div>
-			</div>
-		</section> -->
 	</div><!-- /.l-page -->
 </div><!-- /.l-site -->
 
