@@ -23,8 +23,13 @@
 	.nav-tabs.nav-justified>li>a {border:0;margin-bottom:2rem;color:#222;}
 	.nav-tabs.nav-justified>li>a:hover {border:0;background-color:transparent;}
 	.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover {width: 75%;margin: 0 auto;color:#07acb2;background-color:transparent;border:0;border-bottom: 3px solid #07acb2;}
-
+	
+	.col-sm-offset-2 .row .btn {margin-bottom:1rem;}
+	
 	@media screen and (max-width: 980px) {
+		.band-grey {background-image: none;}
+		.nav-tabs.nav-justified>li {float: left;width: 50%;}
+		.form-horizontal .form-group {margin:0 0 15px;}
 		.band-container {width: 100%;}
 		.band form h1 {text-align_:center;margin:0 auto;}
 		.band-grey {background-position:right 2rem;background-size:28% auto;}
@@ -57,14 +62,26 @@
 				<div class="band-inner">
 					<div class="row">
 						<ul class="nav nav-tabs nav-justified" role="tablist">
-							<li role="presentation" class="active"><a href="#aaa" role="tab" data-toggle="tab">學員登入</a></li>
+							<li role="presentation" class="active"><a href="#aaa" role="tab" data-toggle="tab">會員登入</a></li>
 							<li role="presentation"><a href="#bbb" role="tab" data-toggle="tab">家長登入</a></li>
 						</ul>
 						<div class="tab-content">
 							<div role="tabpanel" class="tab-pane fade in active" id="aaa">
 								<form class="form-horizontal" role="form">
-									<!-- <h1>學員登入<p>學校資料</p></h1> -->
 									<div class="form-group">
+										<label for="" class="col-sm-2 control-label"><b>*</b>電郵</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="" placeholder="請填寫註冊電郵">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-2 control-label"><b>*</b>密碼</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="" placeholder="請填寫登入密碼">
+										</div>
+									</div>
+									<!-- <h1>學員登入<p>學校資料</p></h1> -->
+									<!-- <div class="form-group">
 										<label class="col-sm-2 control-label"></label>
 										<div class="col-sm-10">
 											<p style="color:#777;">學校資料</p>
@@ -111,11 +128,25 @@
 										<div class="col-sm-10">
 											<input type="date" class="form-control" id="" placeholder="---">
 										</div>
-									</div>
+									</div> -->
 									<div class="form-group">
 										<div class="col-sm-offset-2 col-sm-10">
-											<button type="submit" class="btn btn-lg btn-primary"><i class="fa fa-sign-in"></i> 登入</button>
-											<a href="registered.html" class="btn btn-lg btn-default"><i class="fa fa-registered"></i> 註冊</a>
+											<div class="row">
+												<div class="col-sm-6">
+													<button type="submit" class="btn btn-block btn-lg btn-primary"><i class="fa fa-sign-in"></i> 登入</button>
+												</div>
+												<div class="col-sm-6">
+													<a href="forget.html" class="btn btn-block btn-lg btn-default"><i class="fa fa-question" style="color:#999;"></i> 忘記密碼</a>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-sm-6">
+													<a href="registered1.html" class="btn btn-block btn-lg btn-default">學生會員註冊</a>
+												</div>
+												<div class="col-sm-6">
+													<a href="registered2.html" class="btn btn-block btn-lg btn-default">一般會員註冊</a>
+												</div>
+											</div>
 										</div>
 									</div>
 								</form>
@@ -125,26 +156,38 @@
 									<div style="height:3rem;"></div>
 									<!-- <h1 class="col-sm-offset-2">家長登入</h1> -->
 									<div class="form-group">
-										<label for="" class="col-sm-2 control-label">手機號碼</label>
+										<label class="col-sm-2 control-label"></label>
 										<div class="col-sm-10">
-											<input type="text" class="form-control" id="" placeholder="請填寫手機號碼">
+											<p style="color:#777;">家長登入</p>
 										</div>
 									</div>
 									<div class="form-group">
-										<label for="" class="col-sm-2 control-label">學生姓名</label>
-										<div class="col-sm-10">
-											<input type="text" class="form-control" id="" placeholder="請填寫學生姓名">
+										<!-- <label for="" class="col-sm-2 control-label">手機號碼</label> -->
+										<div class="col-sm-10 col-sm-offset-2">
+											<input type="text" class="form-control" id="" placeholder="填寫授權家長手機號">
 										</div>
 									</div>
 									<div class="form-group">
+										<!-- <label for="" class="col-sm-2 control-label">學生姓名</label> -->
+										<div class="col-sm-10 col-sm-offset-2">
+											<input type="text" class="form-control" id="" placeholder="填寫學生登入電郵">
+										</div>
+									</div>
+									<!-- <div class="form-group">
 										<label for="" class="col-sm-2 control-label">學生生日</label>
 										<div class="col-sm-10">
 											<input type="date" class="form-control" id="" placeholder="---">
 										</div>
+									</div> -->
+									<div class="form-group">
+										<!-- <label for="" class="col-sm-2 control-label"><b>*</b>驗證碼</label> -->
+										<div class="col-sm-10 col-sm-offset-2">
+											<input type="text" class="form-control" id="" placeholder="填寫驗證碼">
+										</div>
 									</div>
 									<div class="form-group">
-										<div class="col-sm-offset-2 col-sm-10">
-											<button type="submit" class="btn btn-lg btn-primary"><i class="fa fa-sign-in"></i> 登入</button>
+										<div class="col-sm-offset-2 col-sm-5">
+											<button type="submit" class="btn btn-block btn-lg btn-primary"><i class="fa fa-sign-in"></i> 登入</button>
 										</div>
 									</div>
 								</form>
