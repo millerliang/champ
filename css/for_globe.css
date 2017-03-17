@@ -106,7 +106,7 @@ display: block;
 padding: 10px 0;
 }
 .nav a.btn {font-size:1.6rem;padding: .5rem 1.5rem;margin-top:.6rem;display: inline-block;}
-.nav a i {font-size:1.6rem;color:rgba(255,255,255,.65);}
+.nav a i {min-width: 1.5rem;font-size:1.6rem;color:rgba(255,255,255,.65);}
 .nav .nav-primary {opacity: 1;}
 .nav .nav-primary:hover {opacity: 0.7;}
 .nav .nav-secondary {opacity: 0.4;}
