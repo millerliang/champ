@@ -12,8 +12,10 @@
 	.table_s1 th,.table_s1 td {font-size:1.8rem;text-align:center;color:#fff;border-color:#fff!important;}
 	.table_s2 th {font-size:1.8rem;text-align:center;color:#fff;border:none!important;border-bottom:1px solid #fff!important;}
 	.table_s2 td {font-size:1.5rem;text-align:center;color:#fff;border-color:rgba(255,255,255,.12)!important;}
-	.pager {color:#fff;}
-	.pager li {font-size:1.6rem;}
+	.pager {color:#333;display: table;width: 100%;}
+	.pager li {font-size:1.6rem;display: table-cell;}
+	.sel_date {display: table-caption!important;margin:0;transform:translateY(1.6rem);}
+	.sel_date select {padding: 3px .6rem;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;}
 	.tab-pane canvas {margin:3rem auto;}
 	.nav-tabs{position: static;padding:0;}
 	.nav-tabs li {}
@@ -26,6 +28,8 @@
 		.nav-tabs{position: static;padding:0 10px;}
 		.nav-tabs.nav-justified>li {display: table-cell;width: 1%;}
 		.nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover {width:100%;}
+		.sel_date {display: table-caption;margin-bottom:1rem;transform:translateY(0rem);}
+		.sel_date select {width: 100%;}
 	}
 	</style>
 </head>
@@ -62,8 +66,8 @@
 					<br>
 					<nav>
 						<ul class="pager">
+							<li class="sel_date"><select><option value="">2016/11/07(一) ~ 2016/11/13(日)</option></select></li>
 							<li class="previous"><a href="#"><i class="fa fa-angle-left"></i> 上一週</a></li>
-							<li class="sel_date">2016/11/07(一) ~ 2016/11/13(日)</li>
 							<li class="next"><a href="#">下一週 <i class="fa fa-angle-right"></i></a></li>
 						</ul>
 					</nav>
